@@ -38,10 +38,10 @@ for pedido in pedidos
 alt pagamento aprovado
 
 : ControladorPagamento - atualizarStatus("pago") : boolean > Pedido < confirmação  de pagamento-
-ArrayList = "Pagamento concluído" 
+ArrayList = "Pagamento concluído"
 
 alt pagamento rejeitado
-ArrayList = "Pagamento recusado" 
+ArrayList = "Pagamento recusado"
 
 ## Realizar Pedido (Cliente)
 
