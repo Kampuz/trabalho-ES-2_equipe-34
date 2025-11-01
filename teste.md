@@ -84,7 +84,7 @@ alt status != "Pago"
 se já existir item \
 < retorna erro \
  se não existir cria item e depois \
-: ControladorCardapio - adicionarItem(novoItem\<Item>) > Cardapio
+: ControladorCardapio - adicionarItem(novoItem\<Item>) : void > Cardapio
 
 ## Remover Item do Cardápio (Restaurante)
 
@@ -96,7 +96,7 @@ se já existir item \
 se não existir item \
 < retorna erro \
  se existir item \
-: ControladorCardapio - removerItem(item\<Item>) > Cardapio
+: ControladorCardapio - removerItem(item\<Item>) : void > Cardapio
 
 ## Atualizar Item do Cardápio (Restaurante)
 
@@ -108,7 +108,7 @@ se não existir item \
 se já não existir item \
 < retorna erro \
  se existir item \
-: ControladorCardapio - atualizarItem(item\<Item>, nomeNovo {string}, descricao {string}, valor {int}, ingredientes {Arraylist\<string>}, adicionaveis {ArrayList\<string>}) > Cardapio
+: ControladorCardapio - atualizarItem(item\<Item>, nomeNovo {string}, descricao {string}, valor {int}, ingredientes {Arraylist\<string>}, adicionaveis {ArrayList\<string>}) : void > Cardapio
 
 ## Alterar Status do Pedido (Restaurante) ***
 
@@ -135,9 +135,7 @@ alt: Se aceitar o pedido
 
 : ControladorPrincipal - aceitarPedido(pedido {Pedido}) : void > ControladorPedido
 
-: ControladorPedido - aceitarPedido(pedido {Pedido}) : void > Pedido - CatalogoPedido
-
-: Pedido - atualizarStatus("Aprovado") : void
+: ControladorPedido - aceitarPedido(pedido {Pedido}) : void > CatalogoPedido
 
 : CatalogoPedido - atualizarPedido(pedido {Pedido}) : void > return pedido aceito
 
@@ -145,8 +143,6 @@ alt: Se recusar o pedido
 
 : ControladorPrincipal - recusarPedido(pedido {Pedido}) : void > ControladorPedido
 
-: ControladorPedido - recusarPedido(pedido {Pedido}) : void > Pedido - CatalogoPedido
-
-: Pedido - atualizarStatus("Recusado") : void
+: ControladorPedido - recusarPedido(pedido {Pedido}) : void > CatalogoPedido
 
 : CatalogoPedido - atualizarPedido(pedido {Pedido}) : void > return pedido recusado
