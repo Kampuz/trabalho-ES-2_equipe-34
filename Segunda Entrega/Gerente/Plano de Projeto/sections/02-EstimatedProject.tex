@@ -1,0 +1,150 @@
+\section{Estimativas do projeto}
+
+\subsection{Dados históricos usados nas estimativas}
+    Os dados foram baseados em LOC (Linhas de Código) a cada minuto para uma implementação em Java. Assim esses valores serão utilizados para as estimativas. Para o Projeto de Imobiliária, os integrantes Roberto e Paulo estarão encarregados a codificar o projeto, com aproximadamente 0,868421053 e 1,467485671 LOC por minuto respectivamente.
+
+\subsection{Técnicas de estimativa}
+    \subsubsection{Técnicas de Decomposição}
+    
+  
+    \paragraph{LOC Abordagem 1}
+    \begin{center}
+    \begin{tabular}{|c| c c c |c|}    % imobiliário
+         \hline
+         Funções & Otimista & Provável & Pessimista & Esperado\\ [0.5ex]
+         \hline
+         Agendamento Visita & 100 & 120 & 150 & 115\\ [0.5ex]
+         \hline
+         Agendamento Vistoria & 90 & 110 & 140 & 100\\ [0.5ex]
+         \hline
+         Criar Cobrança Aluguel & 80 & 100 & 125 & 100\\ [0.5ex]
+         \hline
+         Criar Cobrança Multa & 100 & 120 & 140 & 115\\ [0.5ex]
+         \hline
+         Notificar Aluguel & 60 & 90 & 100 & 80\\ [0.5ex]
+         \hline 
+         Pagamento Cobrança & 80 & 100 & 120 & 100\\ [0.5ex]
+         \hline
+         Registro Cliente & 100 & 120 & 140 & 115\\ [0.5ex]
+         \hline
+         Registro Contrato Aluguel & 110 & 130 & 150 & 115\\ [0.5ex]
+         \hline
+         Registro Funcionário  & 100 & 120 & 140 & 115\\ [0.5ex]
+         \hline
+         Registro Gerente  & 100 & 120 & 140 & 115\\ [0.5ex]
+         \hline
+         Registro Imóvel  & 110 & 130 & 150 & 120\\ [0.5ex]
+         \hline
+         Registro Laudo Técnico  & 100 & 120 & 130 & 100\\ [0.5ex]
+         \hline
+         Registro Laudo Vistoria  & 100 & 120 & 130 & 100\\ [0.5ex]
+         \hline
+         Total & - & - & - & 1390 \\ [0.5ex]
+         \hline
+    \end{tabular}
+    \end{center}
+        Estimando dois valores de produtividade média e custo médio: \\
+        Produtividade média = 596 LOC/Pessoa-Mês;   
+        Custo Médio = \$1/LOC \\ \\
+        Esforço = Total Esperado / Produtividade média = 1390 / 596 = 19,1107 pessoas-mês\\
+        Custo = Total Esperado * Custo médio = 1390 * 1 = R\$1390,00\\ \\
+        Assim o custo é de R\$1390,00 e o esforço é de 19,1107 pessoas-mês\\
+    
+    \subsubsection{Técnicas de Decomposição}
+  
+    \paragraph{LOC Abordagem 2}
+    \begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|}
+         \hline
+         Funções & LOC/pessoa-mes & \$/LOC &  LOC Estimado & \$ & Pessoas-mês  \\ [0.5ex]
+         \hline
+         Agendamento Visita & 100 & 1 & 115 & 115 & 12\\ [0.5ex]
+         \hline
+         Agendamento Vistoria & 90 & 1 & 100 & 100 & 12\\ [0.5ex]
+         \hline
+         Criar Cobrança Aluguel & 80 & 1 & 100 & 100& 12\\ [0.5ex]
+         \hline
+         Criar Cobrança Multa & 100 & 1 & 115 & 115& 12\\ [0.5ex]
+         \hline
+         Notificar Aluguel & 60 & 1 & 80 & 80& 12\\ [0.5ex]
+         \hline 
+         Pagamento Cobrança & 80 & 1 & 100 & 100& 12\\ [0.5ex]
+         \hline
+         Registro Cliente & 100 & 1 & 115 & 115& 12\\ [0.5ex]
+         \hline
+         Registro Contrato Aluguel & 110 & 1 & 115 & 115& 12\\ [0.5ex]
+         \hline
+         Registro Funcionário  & 100 & 1 & 115 & 115& 12\\ [0.5ex]
+         \hline
+         Registro Gerente  & 100 & 1 & 115 & 115& 12\\ [0.5ex]
+         \hline
+         Registro Imóvel  & 110 & 1 & 120 & 120& 12\\ [0.5ex]
+         \hline
+         Registro Laudo Técnico  & 100 & 1 & 100 & 100& 12\\ [0.5ex]
+         \hline
+         Registro Laudo Vistoria  & 100 & 1 & 100 & 100& 12\\ [0.5ex]
+         \hline
+         Total & - & - & - & 1390 & 156\\ [0.5ex]
+         \hline
+    \end{tabular}
+    \end{center}
+        Valor estimado de pessoa-mês de 12 (2 pessoas * 6 meses). Assim o Custo estimado é de \$1390,00 e o esforço estimado do projeto é de 156 pessoa-mês.
+
+    \paragraph{Pontos de função}
+    \begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|}
+         \hline
+        Funções & Análise Requisitos & Projeto & Codificação & Teste & Total \\ [0.5ex]
+         \hline
+         Agendamento Visita & 2 & 2 & 1 & 1 & 6\\ [0.5ex]
+         \hline
+         Agendamento Vistoria & 3 & 3 & 2 & 1 & 9\\ [0.5ex]
+         \hline
+         Criar Cobrança Aluguel & 3 & 2 & 3 & 1 & 9\\ [0.5ex]
+         \hline
+         Criar Cobrança Multa & 4 & 3 & 2 & 1 & 10\\ [0.5ex]
+         \hline
+         Notificar Aluguel & 2 & 3 & 4 & 1 & 10\\ [0.5ex]
+         \hline 
+         Pagamento Cobrança & 2 & 3 & 3 & 1& 9\\ [0.5ex]
+         \hline
+         Registro Cliente & 4 & 2 & 3 & 1& 10\\ [0.5ex]
+         \hline
+         Registro Contrato Aluguel & 4 & 4 & 2 & 1& 11\\ [0.5ex]
+         \hline
+         Registro Funcionário  & 4 & 2 & 3 & 1& 10\\ [0.5ex]
+         \hline
+         Registro Gerente  & 3 & 2 & 4 & 1& 10\\ [0.5ex]
+         \hline
+         Registro Imóvel  & 3 & 3 & 5 & 1& 12\\ [0.5ex]
+         \hline
+         Registro Laudo Técnico  & 5 & 3 & 3 & 1 & 12\\ [0.5ex]
+         \hline
+         Registro Laudo Vistoria  & 4 & 4 & 3 & 1 & 12\\ [0.5ex]
+         \hline 
+         Total & 43 & 36 & 38 & 13 & 130\\ [0.5ex]
+         \hline
+         Taxa & 2 & 2 & 2 & 3 & -\\ [0.5ex]
+         \hline
+         Custo & 86 & 72 & 76 & 39 & 273\\ [0.5ex]
+         \hline
+    \end{tabular}
+    \end{center}
+        No caso de Pontos de Função, o custo estimado é de \$273,00 e o esforço estimado do projeto é de 130 pessoa-mês.
+
+
+    \subsubsection{Modelo Empírico}
+    \paragraph{Modelo Estático de Variável Simples}
+    KLOC = 1.11 \\
+    Esforço E = $5.2 * KLOC^{0.91}=5.71$ pessoa-mês\\
+    Duração do Projeto D = $4.1 * KLOC^{0.36}=4.257$\\
+    Tamanho da Equipe S = $0.54 * Esforço^{0.06}=0.6$(pessoas)\\
+    Linhas de Documentação DOC = $49 * KLOC^{1.01}=54.447$
+    
+    
+    \paragraph{Modelo COCOMO}
+
+    O projeto se define como Modelo Básico e Orgânico. \\
+    Esforço = $A*(KLOC)^B = 2.678$ Pessoa-mês\\
+    Tempo = $C*(E)^D =3,635$ meses\\
+    Assim o projeto tem 2.678 pessoa-mês e 3,655 meses.
