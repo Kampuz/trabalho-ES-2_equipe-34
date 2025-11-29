@@ -2,6 +2,8 @@
 
 ## Membros: Fernando Salesi e Miguel de Campos
 
+## Aqui estão os artefatos gerados como
+
 - Analistas do Sistema de Delivery
 - Codificadores do Sistema de Panificador
 - Gerentes do  do Sistema de Delivery
