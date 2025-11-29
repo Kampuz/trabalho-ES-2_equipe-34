@@ -1,10 +1,15 @@
-# Trabalho de ES 2 da equipe 34
+# Trabalho de Engenharia de Software II - Equipe 34
 
-## Membros: Fernando Salesi e Miguel de Campos
+**Membros:**
+- Fernando Salesi
+- Miguel de Campos
 
-## Aqui estão os artefatos gerados como
+Este repositório reúne os artefatos produzidos pela equipe ao longo do projeto, atuando em diferentes papéis conforme os módulos da disciplina:
 
-- Analistas do Sistema de Delivery
-- Codificadores do Sistema de Panificador
-- Gerentes do  do Sistema de Delivery
-- SQAs do Sistema de Eventos
+## Papéis desempenhados
+
+### Analistas do Sistema de Delivery
+### Codificadores do Sistema de Panificador
+### Gerentes do  do Sistema de Delivery
+### SQAs do Sistema de Eventos
+
